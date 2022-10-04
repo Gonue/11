@@ -1,0 +1,61 @@
+<template>
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+
+      <div class="container-fluid">
+        <router-link to="/" class="navbar-brand">LOGO</router-link>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">About</router-link>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+
+            <router-link to="/cart" class="nav-link btn cart">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+            </router-link>
+
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">Register</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/login" class="nav-link" v-if="!$store.state.account.id">Login</router-link>
+              <a to="/login" class="nav-link" @click="logout()" v-else>LogOut</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+</template>
+
+<script>
+import store from "@/scripts/store";
+import router from "@/scripts/router"
+export default {
+  name: 'Header',
+  setup() {
+    const logout = () => {
+      store.commit('setAccount', 0);
+      sessionStorage.removeItem("id");
+      router.push({ path: "/" });
+    }
+    return { logout };
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+header .navbar .cart {
+  color: red;
+}
+</style>
