@@ -1,6 +1,5 @@
 package com.example.server.entity;
 
-
 import lombok.Getter;
 import lombok.Setter;
 

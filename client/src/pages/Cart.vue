@@ -29,8 +29,6 @@ export default {
         const state = reactive({
             items: []
         })
-
-
         const load = () => {
             axios.get("/api/cart/items").then(({ data }) => {
                 console.log(data);

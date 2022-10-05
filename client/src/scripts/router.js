@@ -9,6 +9,8 @@ import Product_create from "@/pages/Product_create"
 import Product_delete from "@/pages/Product_delete"
 import Member_chat from "@/pages/Member_chat"
 import Admin from "@/pages/Admin"
+import Member_chat_test from "@/pages/Member_chat_test"
+
 
 const routes = [
     { path: "/", component: Home },
@@ -20,7 +22,9 @@ const routes = [
     { path: "/create", component: Product_create},
     { path: "/delete", component: Product_delete},
     { path: "/admin", component: Admin},
-    { path: "/Chat", component: Member_chat},
+    { path: "/chat", component: Member_chat},
+    { path: "/chat1", component: Member_chat_test},
+
 
 
   ];

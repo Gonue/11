@@ -25,4 +25,7 @@ public class Item {
 
     @Column //똑같이
     private  int discount_Per;
+
+
+
 }

@@ -50,86 +50,96 @@
                                     고양이 ㅋㅋ
                                 </p>
                                 <div class="border-top">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        1
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        2
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        3
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        4
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        5
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="card-text pt-3 pb-3 border-top">
-                                <div class="row">
-                                    <div class="col-auto">
-                                        <label class="col-from-label">구매수량</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            1
+                                        </label>
                                     </div>
-                                    <div class="col-auto">
-                                        <div class="input-group">
-                                            <span class="input-group-text">-</span>
-                                            <input type="text" class="form-control" style="width:40px;" value="1">
-                                            <span class="input-group-text">+</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            3
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            4
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            5
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="card-text pt-3 pb-3 border-top">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <label class="col-from-label">구매수량</label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="input-group">
+                                                <span class="input-group-text">-</span>
+                                                <input type="text" class="form-control" style="width:40px;" value="1">
+                                                <span class="input-group-text">+</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row pt-3 pb-3 border-top">
-                                <div class="col-6">
-                                    <h3>총 상품 금액</h3>
+                                <div class="row pt-3 pb-3 border-top">
+                                    <div class="col-6">
+                                        <h3>총 상품 금액</h3>
+                                    </div>
+                                    <div class="col-6" style="text-align: right;">
+                                        <h3>0원</h3>
+                                    </div>
                                 </div>
-                                <div class="col-6" style="text-align: right;">
-                                    <h3>0원</h3>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="col-6 d-grid p-1">
-                                    <button type="button" class="btn btn-lg btn-secondary btn-dark ">장바구니</button>
-                                </div>
-                                <div class="col-6 d-grid p-1">
-                                    <button type="button" class="btn btn-lg btn-secondary btn-warning">주문하기</button>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="col-6 d-grid p-1">
+                                        <router-link to="/cart">
+                                            <button type="button" class="btn btn-lg btn-secondary btn-dark"
+                                                @click="addToCart(item.id)">장바구니</button>
+                                        </router-link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </main>
     </body>
 </template>
+
 <script>
-
-
+import lib from "@/scripts/lib";
+import axios from "axios";
 export default {
-
-
+    name: "detail",
+    props: {
+        item: Object
+    },
+    setup() {
+        const addToCart = (itemId) => {
+            axios.post(`/api/cart/items/${itemId}`).then(() => {
+                console.log('success')
+            })
+        };
+        return { lib, addToCart }
+    }
 }
 </script>
-
 <style scoped>
-#img1{
+#img1 {
     width: 600px;
     height: 600px;
 }
