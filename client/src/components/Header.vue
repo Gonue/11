@@ -24,7 +24,7 @@
             </router-link>
 
             <li class="nav-item">
-              <router-link to="/" class="nav-link">Register</router-link>
+              <router-link to="/register" class="nav-link">Register</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/login" class="nav-link" v-if="!$store.state.account.id">Login</router-link>
