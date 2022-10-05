@@ -5,6 +5,10 @@ import Order from "@/pages/Order";
 import Register from "@/pages/Register"
 import { createRouter, createWebHistory } from "vue-router";
 import Product_detail from "@/pages/Product_detail"
+import Product_create from "@/pages/Product_create"
+import Product_delete from "@/pages/Product_delete"
+import Member_chat from "@/pages/Member_chat"
+import Admin from "@/pages/Admin"
 
 const routes = [
     { path: "/", component: Home },
@@ -12,7 +16,12 @@ const routes = [
     { path: "/cart", component: Cart},
     { path: "/order", component: Order},
     { path: "/register", component: Register},
-    { path: "/product_d", component: Product_detail},
+    { path: "/detail", component: Product_detail},
+    { path: "/create", component: Product_create},
+    { path: "/delete", component: Product_delete},
+    { path: "/admin", component: Admin},
+    { path: "/Chat", component: Member_chat},
+
 
   ];
   

@@ -10,10 +10,27 @@
             <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                v-model="state.form.name">
+            <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                v-model="state.form.id">
+            <label for="floatingInput">Id</label>
+        </div>
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                v-model="state.form.password">
+            <label for="floatingInput">Password</label>
+        </div>
+        <div class="form-floating">
             <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
                 v-model="state.form.password">
-            <label for="floatingPassword">Password</label>
+            <label for="floatingPassword">Password-Check</label>
         </div>
+        
+        
 
         <div class="checkbox mb-3">
             <label>
