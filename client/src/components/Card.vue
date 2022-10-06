@@ -23,7 +23,7 @@
 
       </div>
     </div>
-  </div>
+  </div><dd></dd>
 </template>
 
 <script>

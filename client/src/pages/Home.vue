@@ -26,8 +26,9 @@
     </div>
   </div>
 </template>
-<script>
 
+
+<script>
 import axios from "axios";
 import { reactive } from "vue";
 import Card from "@/components/Card.vue";
@@ -47,6 +48,8 @@ export default {
   }
 }
 </script>
+
+
 
 <style scoped>
 
