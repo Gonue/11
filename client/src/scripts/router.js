@@ -10,6 +10,7 @@ import Product_delete from "@/pages/Product_delete"
 import Member_chat from "@/pages/Member_chat"
 import Admin from "@/pages/Admin"
 import Member_chat_test from "@/pages/Member_chat_test"
+import T_page from "@/pages/T_page"
 
 
 const routes = [
@@ -24,6 +25,8 @@ const routes = [
     { path: "/admin", component: Admin},
     { path: "/chat", component: Member_chat},
     { path: "/chat1", component: Member_chat_test},
+    { path: "/test", component: T_page},
+
 
 
 
