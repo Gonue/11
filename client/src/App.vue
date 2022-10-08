@@ -1,38 +1,40 @@
 <template>
 
   <Header />
-  <RouterView />
+
+  <RouterView/>
+
   <Footer />
 
 </template>
 
 <script>
-  import Header from "@/components/Header";
-  import Footer from "@/components/Footer";
-  import store from "@/scripts/store";
-  import axios from "axios";
-  import {watch} from "vue";
-  import {useRoute} from "vue-router/dist/vue-router";
-  export default {
-    name: 'App',
-    components: {
-      Footer,
-      Header
-    },
-    setup() {
-      const check = () => {
-        axios.get("/api/account/check").then(({data}) => {
-          console.log(data);
-          store.commit("setAccount", data || 0);
-        })
-      };
-      const route = useRoute();
-      watch(route, () => {
-        check();
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import store from "@/scripts/store";
+import axios from "axios";
+import { watch } from "vue";
+import { useRoute } from "vue-router/dist/vue-router";
+export default {
+  name: 'App',
+  components: {
+    Footer,
+    Header
+  },
+  setup() {
+    const check = () => {
+      axios.get("/api/account/check").then(({ data }) => {
+        console.log(data);
+        store.commit("setAccount", data || 0);
       })
-    }
+    };
+    const route = useRoute();
+    watch(route, () => {
+      check();
+    })
   }
-  </script>
+}
+</script>
 
 <style>
 .bd-placeholder-img {
@@ -85,4 +87,5 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
 </style>
