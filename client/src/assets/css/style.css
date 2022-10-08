@@ -129,7 +129,7 @@ ol {
 	right: 0;
 	height: 4px;
 	width: 80px;
-	background: #7fad39;
+	background: #b2b2b2;
 	content: "";
 	margin: 0 auto;
 }
@@ -524,7 +524,7 @@ ol {
 .header__cart ul li a span {
 	height: 13px;
 	width: 13px;
-	background: #7fad39;
+	background: dark;
 	font-size: 10px;
 	color: #ffffff;
 	line-height: 13px;

@@ -12,6 +12,8 @@ import Admin from "@/pages/Admin";
 import Member_chat_test from "@/pages/Member_chat_test";
 import T_page from "@/pages/T_page";
 import T_page_2 from "@/pages/T_page_2";
+import T_page_3 from "@/pages/T_page_3";
+import T_page_4 from "@/pages/T_page_4";
 
 
 const routes = [
@@ -28,6 +30,10 @@ const routes = [
     { path: "/chat1", component: Member_chat_test},
     { path: "/test", component: T_page},
     { path: "/test2", component: T_page_2},
+    { path: "/test3", component: T_page_3},
+    { path: "/test4", component: T_page_4},
+
+
 
 
 

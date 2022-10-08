@@ -1,5 +1,8 @@
 <template>
-전체 삭제 페이지
+
+
+
+dd
 </template>
 <script>
 
@@ -12,5 +15,8 @@ export default {
 </script>
 
 <style scoped>
+
+
+
 
 </style>

@@ -13,9 +13,11 @@
     "core-js": "^3.8.3",
     "sockjs-client": "^1.6.1",
     "vue": "^3.2.13",
+    "vue-carousel-3d": "^1.0.1",
     "vue-responsive-video-background-player": "^2.3.1",
     "vue-router": "^4.1.5",
     "vue-videobg": "^2.0.0",
+    "vue3-carousel-3d": "^1.0.4",
     "vuex": "^4.0.2",
     "webstomp-client": "^1.2.6"
   },

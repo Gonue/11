@@ -1,16 +1,12 @@
 <template>
+  <Header/>
+    <RouterView/>
 
-  <Header />
-
-  <RouterView/>
-
-  <Footer />
-
+      
 </template>
 
 <script>
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import store from "@/scripts/store";
 import axios from "axios";
 import { watch } from "vue";
@@ -18,7 +14,6 @@ import { useRoute } from "vue-router/dist/vue-router";
 export default {
   name: 'App',
   components: {
-    Footer,
     Header
   },
   setup() {
@@ -87,5 +82,6 @@ export default {
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
 
 </style>
