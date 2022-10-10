@@ -4,7 +4,9 @@
 
 
       <div class="container-fluid">
-        <router-link to="/" class="navbar-brand">LOGO</router-link>
+        <router-link to="/" class="navbar-brand">Logo</router-link>
+
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,27 +36,27 @@
         </div>
       </div>
     </nav>
-    
+
   </header>
 </template>
 
 <script>
-  import store from "@/scripts/store";
-  import router from "@/scripts/router";
-  import axios from "axios";
-  export default {
-    name: 'Header',
-    setup() {
-      const logout = () => {
-        axios.post("/api/account/logout").then(()=>{
-          store.commit('setAccount', 0);
-          router.push({path: "/"});
-        });
-      }
-      return {logout}
+import store from "@/scripts/store";
+import router from "@/scripts/router";
+import axios from "axios";
+export default {
+  name: 'Header',
+  setup() {
+    const logout = () => {
+      axios.post("/api/account/logout").then(() => {
+        store.commit('setAccount', 0);
+        router.push({ path: "/" });
+      });
     }
+    return { logout }
   }
-  </script>
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

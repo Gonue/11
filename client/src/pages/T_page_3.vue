@@ -11,7 +11,7 @@
         <h1 class="fw-light">Get Starting Now</h1>
         <p class="py-5">
           <router-link to="/test4">
-          <a href="#" class="btn btn-primary my-2">작품 둘러보기</a>
+          <a href="#" class="btn btn-primary my-2">환영합니다!</a>
           </router-link>
         </p>
       </section>

@@ -117,7 +117,7 @@ ol {
 }
 
 .section-title h2 {
-	color: #1c1c1c;
+	color: whitesmoke;
 	font-weight: 700;
 	position: relative;
 }
@@ -888,8 +888,8 @@ ol {
 }
 
 .featured__item__pic__hover li:hover a {
-	background: #7fad39;
-	border-color: #7fad39;
+	background: darkcyan;
+	border-color: darkgray;
 }
 
 .featured__item__pic__hover li:hover a i {
@@ -935,11 +935,11 @@ ol {
 }
 
 .featured__item__text h6 a {
-	color: #252525;
+	color: snow;
 }
 
 .featured__item__text h5 {
-	color: #252525;
+	color: wheat;
 	font-weight: 700;
 }
 

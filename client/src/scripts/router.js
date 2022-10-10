@@ -14,6 +14,8 @@ import T_page from "@/pages/T_page";
 import T_page_2 from "@/pages/T_page_2";
 import T_page_3 from "@/pages/T_page_3";
 import T_page_4 from "@/pages/T_page_4";
+import T_page_5 from "@/pages/T_page_5";
+
 
 
 const routes = [
@@ -32,6 +34,8 @@ const routes = [
     { path: "/test2", component: T_page_2},
     { path: "/test3", component: T_page_3},
     { path: "/test4", component: T_page_4},
+    { path: "/test5", component: T_page_5},
+
 
 
 
