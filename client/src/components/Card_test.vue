@@ -9,8 +9,9 @@
             </i>
           </a>
         </li>
+
         <li>
-          <a>
+          <a @click="addToLike(item.id)">
             <i class="fa fa-shopping-cart">
             </i>
           </a>
@@ -38,10 +39,18 @@ export default {
   setup() {
     const addToCart = (itemId) => {
       axios.post(`/api/cart/items/${itemId}`).then(() => {
-        console.log('success')
+        console.log('cart success')
       })
     };
-    return { lib, addToCart }
+
+    // const addToLike = (itemId) => {
+    //   axios.post(`/api/like/items/${itemId}`).then(() => {
+    //     console.log('like success')
+    //   })
+    // };
+
+
+    return { lib, addToCart  }
   }
 }
 </script>

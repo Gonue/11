@@ -21,10 +21,15 @@
           </ul>
           <ul class="navbar-nav">
 
+            <router-link to="/like" class="nav-link btn like">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </router-link>
+            
+
             <router-link to="/cart" class="nav-link btn cart">
               <i class="fa fa-heart" aria-hidden="true"></i>
             </router-link>
-
+            
             <li class="nav-item">
               <router-link to="/register" class="nav-link">Register</router-link>
             </li>
@@ -62,5 +67,9 @@ export default {
 <style scoped>
 header .navbar .cart {
   color: red;
+}
+
+header .navbar .like {
+  color: yellow;
 }
 </style>

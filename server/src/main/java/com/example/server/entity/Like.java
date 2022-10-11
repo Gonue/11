@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "likes")
-public class Cart {
+public class Like {
 
     @Id //pk
     @GeneratedValue(strategy = GenerationType.IDENTITY) //자동 증가값

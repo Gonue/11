@@ -11,7 +11,9 @@
             <i class="fa fa-heart" aria-hidden="true"></i>
           </button>
           <button class="btn btn-dark btn2">
-            <router-link to="/Chat"><i class="fa fa-commenting" aria-hidden="true"></i></router-link>
+            <router-link to="/Chat">
+              <i class="fa fa-commenting" aria-hidden="true"></i>
+            </router-link>
           </button>
         </div>
         <small class="text-muted">
@@ -40,7 +42,12 @@ export default {
         console.log('success')
       })
     };
-    return { lib, addToCart }
+    const addToLike = (itemId) => {
+      axios.post(`/api/like/items/${itemId}`).then(() =>{
+        console.log('like success')
+      })
+    };
+    return { lib, addToCart, addToLike }
   }
 }
 </script>

@@ -59,11 +59,11 @@ import Card_test from "@/components/Card_test.vue";
 export default {
   data: () => ({
     slides: [
-      { src: require('../../public/01.jpg'), text: 'Cheb Khaled' },
-      { src: require('../../public/img/고양2.jpg'), text: 'Cheb Khaled' },
-      { src: require('../../public/img/곰.jpg'), text: 'Cheb Khaled' },
-      { src: require('../../public/01.jpg'), text: 'Cheb Khaled' },
-      { src: require('../../public/01.jpg'), text: 'Cheb Khaled' },
+      { src: require('../../public/img/img1.jpeg'), text: 'Dangerously' },
+      { src: require('../../public/img/img2.jpeg'), text: 'Sunroof' },
+      { src: require('../../public/img/img3.jpeg'), text: 'Destination' },
+      { src: require('../../public/img/img4.jpeg'), text: 'The last of real ones' },
+      { src: require('../../public/img/img5.jpeg'), text: 'The nights' },
     ]
   }),
 
