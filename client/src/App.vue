@@ -1,20 +1,27 @@
 <template>
-  <Header/>
-    <RouterView/>
 
-      
+
+  <Header/>
+  <RouterView />
+  <div>
+  <Footer v-if= "$route.name !== 'start'" id="footer"> </Footer>
+</div>
+
 </template>
 
 <script>
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import store from "@/scripts/store";
 import axios from "axios";
 import { watch } from "vue";
 import { useRoute } from "vue-router/dist/vue-router";
+
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer,
   },
   setup() {
     const check = () => {
@@ -27,8 +34,12 @@ export default {
     watch(route, () => {
       check();
     })
-  }
+  },
+
+
+
 }
+
 </script>
 
 <style>
@@ -83,5 +94,14 @@ export default {
   -webkit-overflow-scrolling: touch;
 }
 
-
+#footer {
+  position: fixed;
+  background-color: #343a20;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6rem;
+  border-radius: 20px / 20px;
+  border: 2px solid rgb(79, 165, 138);
+}
 </style>

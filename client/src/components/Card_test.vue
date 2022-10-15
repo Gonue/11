@@ -4,6 +4,12 @@
       <ul class="featured__item__pic__hover">
 
         <li>
+          <a @click="Play(item.id)">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
           <a @click="addToCart(item.id)">
             <i class="fa fa-heart">
             </i>
@@ -43,14 +49,14 @@ export default {
       })
     };
 
-    // const addToLike = (itemId) => {
-    //   axios.post(`/api/like/items/${itemId}`).then(() => {
-    //     console.log('like success')
-    //   })
-    // };
+    const addToLike = (itemId) => {
+      axios.post(`/api/like/items/${itemId}`).then(() => {
+        console.log('like success')
+      })
+    };
 
 
-    return { lib, addToCart  }
+    return { lib, addToCart, addToLike}
   }
 }
 </script>

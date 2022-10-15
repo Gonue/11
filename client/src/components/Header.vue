@@ -4,7 +4,7 @@
 
 
       <div class="container-fluid">
-        <router-link to="/" class="navbar-brand">Logo</router-link>
+        <router-link to="/start" class="navbar-brand">Logo</router-link>
 
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -18,18 +18,22 @@
             <li class="nav-item">
               <router-link to="/admin" class="nav-link">Admin</router-link>
             </li>
+            <li class="nav-item">
+              <router-link to="/chat" class="nav-link">Community</router-link>
+            </li>
           </ul>
           <ul class="navbar-nav">
 
             <router-link to="/like" class="nav-link btn like">
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </router-link>
-            
-
-            <router-link to="/cart" class="nav-link btn cart">
               <i class="fa fa-heart" aria-hidden="true"></i>
             </router-link>
-            
+
+
+            <router-link to="/cart" class="nav-link btn cart">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+            </router-link>
+
             <li class="nav-item">
               <router-link to="/register" class="nav-link">Register</router-link>
             </li>
@@ -65,11 +69,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-header .navbar .cart {
+header .navbar .like {
   color: red;
 }
 
-header .navbar .like {
+header .navbar .cart {
   color: yellow;
 }
 </style>

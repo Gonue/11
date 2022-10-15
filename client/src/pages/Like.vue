@@ -6,13 +6,16 @@
                     <img :src="i.img_Path" />
                     <span class="name">{{i.name}}</span>
                     <span class="price">{{i.price}}</span>
+
                     <button class=btn>
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
                     </button>
+
                     <button class=btn1>
                         <i class="fa fa-times" aria-hidden="true" @click="remove(i.id)"></i>
                     </button>
                 </li>
+                
             </ul>
                 <router-link to="/order" class="btn btn-primary btn3">구입하기</router-link>
         </div>
@@ -31,8 +34,9 @@ export default {
         })
         const load = () => {
             axios.get("/api/like/items").then(({ data }) => {
-                console.log(data);
+                console.log("like"+data);
                 state.items_Like = data;
+                console.log("like"+ data)
             })
         };
         const remove = (itemId) => {
@@ -61,12 +65,12 @@ export default {
 
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .cart ul li .name {
-    margin-left: 25px;
+    margin-left: 200px;
 }
 
 .cart ul li .price {
@@ -80,7 +84,7 @@ img {
 .cart ul li .btn1 {
     float: right;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 30px;
 }
 .cart .btn3{

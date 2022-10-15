@@ -13,186 +13,41 @@
                   style="transform: translate3d(-720px, 0px, 0px); transition: all 1.2s ease 0s; width: 2160px;">
                   <div class="owl-item cloned" style="width: 360px;">
                     <div class="latest-prdouct__slider__item">
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
                     </div>
                   </div>
+
+                  <div class="owl-item cloned" style="width: 360px;">
+                    <div class="latest-prdouct__slider__item">
+                    </div>
+                  </div>
+
                   <div class="owl-item cloned" style="width: 360px;">
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>5900$</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img2.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img3.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="owl-item active" style="width: 360px;">
-                    <div class="latest-prdouct__slider__item">
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="owl-item" style="width: 360px;">
-                    <div class="latest-prdouct__slider__item">
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="owl-item cloned" style="width: 360px;">
-                    <div class="latest-prdouct__slider__item">
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="owl-item cloned" style="width: 360px;">
-                    <div class="latest-prdouct__slider__item">
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -219,29 +74,29 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -250,29 +105,29 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -281,29 +136,29 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -312,60 +167,29 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="owl-item cloned" style="width: 360px;">
-                    <div class="latest-prdouct__slider__item">
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -374,29 +198,60 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="owl-item cloned" style="width: 360px;">
+                    <div class="latest-prdouct__slider__item">
+                      <a href="#" class="latest-product__item">
+                        <div class="latest-product__item__pic">
+                          <img src="@/../public/img/img1.jpeg" alt="">
+                        </div>
+                        <div class="latest-product__item__text">
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
+                        </div>
+                      </a>
+                      <a href="#" class="latest-product__item">
+                        <div class="latest-product__item__pic">
+                          <img src="@/../public/img/img1.jpeg" alt="">
+                        </div>
+                        <div class="latest-product__item__text">
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
+                        </div>
+                      </a>
+                      <a href="#" class="latest-product__item">
+                        <div class="latest-product__item__pic">
+                          <img src="@/../public/img/img1.jpeg" alt="">
+                        </div>
+                        <div class="latest-product__item__text">
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -423,29 +278,29 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -454,29 +309,29 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -485,29 +340,29 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -516,60 +371,29 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="owl-item cloned" style="width: 360px;">
-                    <div class="latest-prdouct__slider__item">
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
-                        </div>
-                      </a>
-                      <a href="#" class="latest-product__item">
-                        <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
-                        </div>
-                        <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>
@@ -578,29 +402,60 @@
                     <div class="latest-prdouct__slider__item">
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                       <a href="#" class="latest-product__item">
                         <div class="latest-product__item__pic">
-                          <img src="@/../public/01.jpg" alt="">
+                          <img src="@/../public/img/img1.jpeg" alt="">
                         </div>
                         <div class="latest-product__item__text">
-                          <h6>Crab Pool Security</h6>
-                          <span>$30.00</span>
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="owl-item cloned" style="width: 360px;">
+                    <div class="latest-prdouct__slider__item">
+                      <a href="#" class="latest-product__item">
+                        <div class="latest-product__item__pic">
+                          <img src="@/../public/img/img1.jpeg" alt="">
+                        </div>
+                        <div class="latest-product__item__text">
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
+                        </div>
+                      </a>
+                      <a href="#" class="latest-product__item">
+                        <div class="latest-product__item__pic">
+                          <img src="@/../public/img/img1.jpeg" alt="">
+                        </div>
+                        <div class="latest-product__item__text">
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
+                        </div>
+                      </a>
+                      <a href="#" class="latest-product__item">
+                        <div class="latest-product__item__pic">
+                          <img src="@/../public/img/img1.jpeg" alt="">
+                        </div>
+                        <div class="latest-product__item__text">
+                          <h6>Dangerously</h6>
+                          <span>$5900</span>
                         </div>
                       </a>
                     </div>

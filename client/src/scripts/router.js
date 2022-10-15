@@ -16,40 +16,41 @@ import T_page_2 from "@/pages/T_page_2";
 import T_page_3 from "@/pages/T_page_3";
 import T_page_4 from "@/pages/T_page_4";
 import T_page_5 from "@/pages/T_page_5";
-
-
+import NotFoundPage from "@/pages/NotFoundPage";
 
 const routes = [
-    { path: "/", component: Home },
-    { path: "/login", component: Login },
-    { path: "/cart", component: Cart},
-    { path: "/like", component: Like},
-    { path: "/order", component: Order},
-    { path: "/register", component: Register},
-    { path: "/detail", component: Product_detail},
-    { path: "/create", component: Product_create},
-    { path: "/delete", component: Product_delete},
-    { path: "/admin", component: Admin},
-    { path: "/chat", component: Member_chat},
-    { path: "/chat1", component: Member_chat_test},
-    { path: "/test", component: T_page},
-    { path: "/test2", component: T_page_2},
-    { path: "/test3", component: T_page_3},
-    { path: "/test4", component: T_page_4},
-    { path: "/test5", component: T_page_5},
+  { path: "/", component: T_page_4 },
 
+  { path: "/login", component: Login },
+  { path: "/cart", component: Cart },
+  { path: "/like", component: Like },
+  { path: "/order", component: Order },
+  { path: "/register", component: Register },
+  { path: "/detail", component: Product_detail },
+  { path: "/create", component: Product_create },
+  { path: "/delete", component: Product_delete },
+  { path: "/admin", component: Admin },
+  { path: "/chat", component: Member_chat },
+  { path: "/chat1", component: Member_chat_test },
 
+  { path: "/test", component: T_page },
 
+  { path: "/test2", component: T_page_2 },
 
+  { path: "/start", component: T_page_3 },
 
+  { path: "/test4", component: Home },
 
+  { path: "/test5", component: T_page_5 },
 
+  { path: "/404", component: NotFoundPage },
 
-  ];
-  
-  const router = createRouter({
-    history: createWebHistory(),
-    routes,
-  });
+  { path: "/:pathMatch(.*)*", redirect: "/404" },
+];
 
-  export default router;
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
+
+export default router;

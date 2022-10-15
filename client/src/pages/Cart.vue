@@ -1,11 +1,14 @@
 <template>
-    <div class="cart">
+11
+<div class="cart">
         <div class="container">
             <ul>
-                <li v-for="(i, idx) in state.items" :key="idx">
+                <li v-for="(i, idx) in state.items_Cart" :key="idx">
                     <img :src="i.img_Path" />
                     <span class="name">{{i.name}}</span>
                     <span class="price">{{i.price}}</span>
+
+                    
                     <button class=btn>
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
                     </button>
@@ -27,12 +30,13 @@ import axios from 'axios';
 export default {
     setup() {
         const state = reactive({
-            items: []
+            items_Cart: []
+
         })
         const load = () => {
             axios.get("/api/cart/items").then(({ data }) => {
-                console.log(data);
-                state.items = data;
+                state.items_Cart = data;
+                console.log("cart"+data);
             })
         };
         const remove = (itemId) => {
@@ -55,14 +59,14 @@ export default {
 
 .cart ul li {
     border: 10px solid #eee;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-bottom: 25px;
 }
 
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 .cart ul li .name {

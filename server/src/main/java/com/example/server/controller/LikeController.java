@@ -47,7 +47,6 @@ public class LikeController {
         if(!jwtService.isValid(token)){
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);//
         }
-
         int memberId = jwtService.getId(token);
         Like like = likeRepository.findByMemberIdAndItemId(memberId, itemId);
 
@@ -57,6 +56,7 @@ public class LikeController {
             newLike.setItemId(itemId);
             likeRepository.save(newLike);
         }
+        System.out.println("like clear");
 
         return new ResponseEntity<>(HttpStatus.OK);
    }

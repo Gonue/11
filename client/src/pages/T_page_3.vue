@@ -10,20 +10,17 @@
       <section class="py-5 text-center container">
         <h1 class="fw-light">Get Starting Now</h1>
         <p class="py-5">
-          <router-link to="/test4">
-          <a href="#" class="btn btn-primary my-2">환영합니다!</a>
+          <router-link to="/">
+            <a href="#" class="btn btn-primary my-2">환영합니다!</a>
           </router-link>
         </p>
       </section>
     </div>
-  </div>  
+  </div>
 </template>
 
 <script>
-export default {
 
-
-};
 
 
 </script>
@@ -31,7 +28,6 @@ export default {
 
 
 <style scoped>
-
 .jb-box {
   width: 100%;
   height: 100%;
@@ -71,5 +67,4 @@ video {
   font-size: 48px;
   color: #ffffff;
 }
-
 </style>
