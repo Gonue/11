@@ -8,7 +8,6 @@
                     <span class="name">{{i.name}}</span>
                     <span class="price">{{i.price}}</span>
 
-                    
                     <button class=btn>
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
                     </button>

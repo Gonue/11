@@ -4,7 +4,12 @@
       <ul class="featured__item__pic__hover">
 
         <li>
-          <a @click="Play(item.id)">
+          <a @click="selectSound(indexo)" :style="indexo == index ? '' : ''" :class="
+                      indexo == index
+                        ? ''
+                        : ''
+                    " class="flex" v-for="(audio, indexo) in audios"
+                        :key="indexo">>
             <i class="fa fa-play" aria-hidden="true"></i>
           </a>
         </li>
