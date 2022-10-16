@@ -1,4 +1,4 @@
-# market
+# Music player
 
 ## Project setup
 ```
