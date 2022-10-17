@@ -1,10 +1,10 @@
 <template>
 
 
-  <Header/>
+  <Header v-if="$route.name !== 'start'"></Header>
   <RouterView />
   <div>
-  <Footer v-if= "$route.name !== 'start'" id="footer"> </Footer>
+  <Footer v-if="$route.name !== 'start'" id="footer"> </Footer>
 </div>
 
 </template>

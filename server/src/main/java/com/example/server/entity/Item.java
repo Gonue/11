@@ -26,6 +26,9 @@ public class Item {
     @Column //똑같이
     private  int discount_Per;
 
+    @Column(length = 50)
+    private String write;
+
 
 
 }

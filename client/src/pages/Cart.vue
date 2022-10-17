@@ -1,24 +1,65 @@
 <template>
-11
-<div class="cart">
-        <div class="container">
-            <ul>
-                <li v-for="(i, idx) in state.items_Cart" :key="idx">
-                    <img :src="i.img_Path" />
-                    <span class="name">{{i.name}}</span>
-                    <span class="price">{{i.price}}</span>
 
-                    <button class=btn>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    </button>
-                    <button class=btn1>
-                        <i class="fa fa-times" aria-hidden="true" @click="remove(i.id)"></i>
-                    </button>
-                </li>
-            </ul>
-                <router-link to="/order" class="btn btn-primary btn3">구입하기</router-link>
-        </div>
-    </div>
+    <body>
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center py-2">
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="h5 mb-4 text-center py-3">Cart</h3>
+                        <div class="table-wrap">
+                            <table class="table">
+                                <thead class="thead-primary">
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>Product</th>
+                                        <th>Product_Name</th>
+                                        <th>Writer</th>
+                                        <th>Price</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="alert" role="alert" v-for="(i, idx) in state.items_Cart" :key="idx">
+                                        <td class="border-bottom-0">
+                                            <label class="checkbox-wrap checkbox-primary">
+                                                <input type="checkbox" class="align-items-center : container">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="border-bottom-0">
+                                            <img :src="i.img_Path"/>
+                                        </td>
+                                        <td class="border-bottom-0 ">
+                                            <div class="email">
+                                                <span>{{i.name}}</span>
+                                            </div>
+                                        </td>
+                                        <td class="border-bottom-0">{{i.write}}</td>
+                                        
+                                        <td class="border-bottom-0">{{i.price}}</td>
+                                        <td class="border-bottom-0">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">
+                                                    <i class="fa fa-close" @click="remove(i.id)"></i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-3">
+                    <router-link to="/order" class="col-12 btn btn-primary btn3">구입하기</router-link>
+                </div>
+                <p class="py-5"/>
+            </div>
+        </section>
+    </body>
+    
 </template>
 
 
@@ -49,44 +90,28 @@ export default {
 }
 </script>
 
+
 <style scoped>
-.cart ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.cart ul li {
-    border: 10px solid #eee;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
-
-
 img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+}
+.table tbody th, .table tbody td {
+    border: none;
+    padding: 30px;
+    font-size: 12px;
+    background: #fff;
+    border-bottom: 4px solid #f8f9fd;
+    vertical-align: middle;
 }
 
-.cart ul li .name {
-    margin-left: 25px;
+.table thead th {
+    border: none;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 500;
 }
-
-.cart ul li .price {
-    margin-left: 25px;
-}
-
-.cart ul li .btn {
-    margin-left: 25px;
-}
-
-.cart ul li .btn1 {
-    float: right;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-right: 30px;
-}
-.cart .btn3{
+.btn3{
     width :200px;
     display: block;
     margin:0 auto;

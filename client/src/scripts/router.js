@@ -37,7 +37,7 @@ const routes = [
 
   { path: "/test2", component: T_page_2 },
 
-  { path: "/start", component: T_page_3 },
+  { name:"start", path: "/start", component: T_page_3 },
 
   { path: "/test4", component: Home },
 

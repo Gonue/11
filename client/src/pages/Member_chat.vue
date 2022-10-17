@@ -6,7 +6,7 @@
     <div class="container py-5">
 
       <div class="row d-flex justify-content-center">
-        <div class="col-md-8 col-lg-6 col-xl-4">
+        <div class="col-md-6 col-lg-6 col-xl-11">
 
           <div class="card" id="chat1" style="border-radius: 15px;">
             <div
@@ -19,12 +19,8 @@
             <div class="card-body">
 
               <div v-for="(item, idx) in recvList" :key="idx" class="d-flex flex-row justify-content-start mb-4">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp" alt="avatar 1"
-                  style="width: 45px; height: 100%;">
                 <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
-
-                  <p>NAME :{{ item.userName }} </p>
-                  <p class="small mb-0">{{ item.content }}</p>
+                  <p>{{ item.userName }} : {{ item.content }} </p>
                 </div>
               </div>
 
@@ -32,16 +28,16 @@
               <div class="form-outline">
                 <input v-model="message" type="text" @keyup="sendMessage" class="form-control" id="textAreaExample"
                   rows="4">
-                
-
-                <label class="form-label" for="textAreaExample">
-
+                <label class="form-label"  for="textAreaExample">
                 </label>
               </div>
             </div>
+            
           </div>
         </div>
+
       </div>
+                <div class="py-5"></div>
 
     </div>
   </section>
@@ -74,7 +70,6 @@ export default {
 
     },
     send() {
-      console.log("Send message:" + this.message);
       if (this.stompClient && this.stompClient.connected) {
         const msg = {
           userName: this.userName,
@@ -87,7 +82,7 @@ export default {
       const serverURL = "http://localhost:8080"
       let socket = new SockJS(serverURL);
       this.stompClient = Stomp.over(socket);
-      console.log(`소켓 연결을 시도합니다. 서버 주소: ${serverURL}`)
+      console.log(`소켓 연결을 서버 주소: ${serverURL}`)
       this.stompClient.connect(
         {},
         frame => {
@@ -96,7 +91,6 @@ export default {
           console.log('소켓 연결 성공', frame);
 
           this.stompClient.subscribe("/send", res => {
-            console.log('구독으로 받은 메시지 입니다.', res.body);
 
             // 받은 데이터를 json으로 파싱하고 리스트에 넣어줍니다.
             this.recvList.push(JSON.parse(res.body))
@@ -125,7 +119,7 @@ export default {
 #chat1 .form-outline .form-control~.form-notch .form-notch-leading {
   left: 0;
   top: 0;
-  height: 100%;
+  height: 50%;
   border-right: none;
   border-radius: .65rem 0 0 .65rem;
 }

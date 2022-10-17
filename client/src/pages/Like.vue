@@ -1,5 +1,6 @@
 <template>
-    <div class="cart">
+    좋아용
+    <div class="cart py-3">
         <div class="container">
             <ul>
                 <li v-for="(i, idx) in state.items_Like" :key="idx">

@@ -1,17 +1,29 @@
 <template>
   
   <div class="flex w-11/12 h-16 items-center justify-around m-auto" id="hello">
-    <div class="w-3/12 md:flex items-center hidden"
+    <div class="w-4/12 md:flex items-center hidden"
     v-for="(audio, indexo) in audios.slice(index, index + 1)" :key="indexo">  
-      <img class="w-20 h-20 rounded-full" src="../../public/img/img1.jpeg">
-      <div class="flex flex-col ml-5 font-semibold text-white">
+      <img class="w-20 h-20 rounded-full" :src="audio.src">
+      <div class="flex-col ml-5 font-semibold text-white">
         <p>{{ audio.name }}</p>
         <p class="text-xs text-white">{{ audio.artist }}</p>
       </div>
+      
 
-
+      <div class="text-grey-darker hover:bg-gray-300 rounded-full ml-5">
+            <svg
+              @click="prevButton ? previous() : ''"
+              class="w-8 h-8 cursor-pointer"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path d="M4 5h3v10H4V5zm12 0v10l-9-5 9-5z" />
+            </svg>
+          </div>
       <!-- start-->
-      <div class="text-white p-3 rounded-full">
+      <div class="text-grey-darker p-3 rounded-full">
+        
         <svg v-if="!pauseTrack" @click="play()" class="w-8 h-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg"
           fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -24,30 +36,43 @@
           <path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" />
         </svg>
       </div>
+
+      <div class="text-grey-darker hover:bg-gray-300 rounded-full p-1">
+            <svg
+              @click="nextButton ? next() : ''"
+              class="w-8 h-8 cursor-pointer"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path d="M13 5h3v10h-3V5zM4 5l9 5-9 5V5z" />
+            </svg>
+          </div>
     </div>
 
 
     <!---->
-    <div class="w-4/5 flex md:w-8/12 items-center">
-      <div class="text-sm text-white w-2/12 md:w-1/12 font-semibold">
+    
+    <div class="w-3/5 flex md:w-6/12 items-center">
+      <div class="text-sm text-white w-3/12 md:w-1/12 font-semibold">
         <p>{{ timer }}</p>
       </div>
       <div class="mt-1 relative w-8/12 md:w-10/12">
         <div @click="seek($event)" ref="progress"
-        class="h-1 bg-grey-dark cursor-pointer rounded-full bg-gray-500">
-          <div class="flex w-full justify-end h-1 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full relative"
+        class="h-1 bg-grey-dark cursor-pointer rounded-full bg-white">
+          <div class="flex w-full justify-end h-1 bg-gradient-to-r from-gray-500 to-gray-700 rounded-full relative"
             :style="{width: step +'%'}"></div>
         </div>
         <div class="flex w-full justify-end h-1 rounded-full relative" :style="{ width: step + '%' }"><span
             id="progressButtonTimer"
-            class="w-3 h-3 md:w-4 md:h-4 bg-gradient-to-r from-blue-500 to-blue-700 absolute pin-r pin-b -mb-1 rounded-full shadow"></span>
+            class="w-3 h-3 md:w-4 md:h-4 bg-gradient-to-r from-blue-100 to-blue-100 absolute pin-r pin-b -mb-1 rounded-full shadow"></span>
         </div>
       </div>
       <div class="text-sm text-white w-2/12 md:w-1/12 font-semibold">
         <p>{{ duration }}</p>
       </div>
     </div>
-    <div class="w-1/5 flex md:w-2/12 m-auto items-center">
+    <div class="w-1/5 flex md:w-2/12  items-center">
       <div class="w-3/12 md:w-2/12 hover:bg-gray-500 rounded-full md:p-1" @click="mute()">
         <svg v-if="mutePlayer" class="w-6 h-6 m-auto cursor-pointer"
           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -64,23 +89,28 @@
                         </svg>
       </div>
       <div class="w-9/12 md:w-6/12 m-auto relative">
-        <div @click="volume($event)" ref="volBar" class="h-1 bg-grey-dark cursor-pointer rounded-full bg-gray-500 m-auto relative" style="width: 100%;">
-          <div class="flex justify-end h-1 bg-gradient-to-r from-teal-400 to-blue-500 rounded-full relative"
+        <div @click="volume($event)" ref="volBar" class="h-1 bg-white cursor-pointer rounded-full bg-gray-500 m-auto relative" style="width: 100%;">
+          <div class="flex justify-end h-1 bg-gradient-to-r from-gray-400 to-gray-500 rounded-full relative"
           :style="{ width: volumeProgress + '%' }"></div>
         </div>
         <div class="flex justify-end h-1 rounded-full relative" :style="{ width: volumeProgress + '%' }"><span id="progressButtonVolume"
-            class="w-3 h-3 md:w-4 md:h-4 bg-gradient-to-r from-teal-400 to-blue-500 absolute pin-r pin-b -mb-1 rounded-full shadow"></span>
+            class="w-3 h-3 md:w-4 md:h-4 bg-white absolute pin-r pin-b -mb-1 rounded-full shadow"></span>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script scopeed>
+<script>
 import { ref, reactive } from "vue"
 import A1 from "@/music/A1.mp3"
 import A2 from "@/music/A2.mp3"
 import A3 from "@/music/A3.mp3"
+import Dangerously from "@/music/Dangerously.mp3"
+import Destination from "@/music/Destination.mp3"
+import Sunroof from "@/music/Sunroof.mp3"
+
+
 import { Howl, Howler } from "howler"
 
 export default {
@@ -88,10 +118,10 @@ export default {
   
   setup() {
         const audios = ref([
-            { name: "11Silver Spirit", file: A1, artist: "Shamika Cox", howl: null },
-            { name: "Dance With Me", file: A2, artist: "Ehrling", howl: null },
-            { name: "Children", file: A3, artist: "SKYBAR", howl: null },
-
+            { name: "null", artist:"null", howl:null, src: require('../../public/img/black.jpeg')},
+            { name: "Dangerously", file: Dangerously, artist: "Charlie Puth", howl: null, src: require('../../public/img/img1.jpeg') },
+            { name: "Sunroof", file: Sunroof, artist: "Nicky Youre", howl: null, src: require('../../public/img/img2.jpeg')},
+            { name: "Destination", file: Destination, artist: "Crash adams", howl: null, src: require('../../public/img/img3.jpeg') },
         ])
         const step = ref(0)
         const nextButton = ref(true)
@@ -106,7 +136,7 @@ export default {
         const volBar = ref(null)
         const sliderBtn = ref(0)
         const sliderBtnVol = ref(null)
-        const volumeProgress = ref(90)
+        const volumeProgress = ref(50)
         const mutePlayer = ref(false)
         const state = reactive({
             audioPlaying: [],
@@ -367,8 +397,8 @@ export default {
 
 .cd-center {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 70%;
+  left: 70%;
   transform: translate(-50%, -50%);
   width: 60px;
   height: 60px;

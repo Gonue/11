@@ -4,12 +4,7 @@
       <ul class="featured__item__pic__hover">
 
         <li>
-          <a @click="selectSound(indexo)" :style="indexo == index ? '' : ''" :class="
-                      indexo == index
-                        ? ''
-                        : ''
-                    " class="flex" v-for="(audio, indexo) in audios"
-                        :key="indexo">>
+          <a @click="play('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')">
             <i class="fa fa-play" aria-hidden="true"></i>
           </a>
         </li>
@@ -42,12 +37,24 @@
 <script>
 import lib from "@/scripts/lib";
 import axios from "axios";
+import { reactive } from '@vue/reactivity';
 export default {
   name: "Card_test",
   props: {
     item: Object
+    
+  },
+
+  methods:{
+    play(sound) {
+      if (sound) {
+        var audio = new Audio(sound);
+        audio.play();
+      }
+    }
   },
   setup() {
+    
     const addToCart = (itemId) => {
       axios.post(`/api/cart/items/${itemId}`).then(() => {
         console.log('cart success')
@@ -59,10 +66,13 @@ export default {
         console.log('like success')
       })
     };
-
+    
 
     return { lib, addToCart, addToLike}
   }
+  
+
+  
 }
 </script>
 
