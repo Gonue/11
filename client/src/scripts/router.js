@@ -17,6 +17,8 @@ import T_page_3 from "@/pages/T_page_3";
 import T_page_4 from "@/pages/T_page_4";
 import T_page_5 from "@/pages/T_page_5";
 import NotFoundPage from "@/pages/NotFoundPage";
+import Orders from "@/pages/Orders";
+
 
 const routes = [
   { path: "/", component: T_page_4 },
@@ -46,6 +48,9 @@ const routes = [
   { path: "/404", component: NotFoundPage },
 
   { path: "/:pathMatch(.*)*", redirect: "/404" },
+  { path: "/orders", component: Orders },
+
+
 ];
 
 const router = createRouter({

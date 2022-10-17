@@ -70,8 +70,8 @@
                                 <div class="invalid-feedback"> Credit card number is required </div>
                             </div>
                         </div>
-                        <hr class="my-4"><button class="w-100 btn btn-primary btn-lg" @click="submit()">
-                            결제하기</button>
+                        <hr class="my-4">
+                        <button class="w-100 btn btn-primary btn-lg" @click="submit()">결제하기</button>
                         </div>
                 </div>
             </div>
@@ -87,6 +87,7 @@
 import { computed, reactive } from "vue";
 import axios from 'axios';
 import lib from "@/scripts/lib";
+import router from "@/scripts/router";
 
 
 export default {
@@ -103,12 +104,25 @@ export default {
         })
 
 
+
         const load = () => {
             axios.get("/api/cart/items").then(({ data }) => {
                 console.log(data);
                 state.items = data;
             })
         };
+
+        const submit = () => {
+            const args = JSON.parse(JSON.stringify(state.form));
+            args.items = JSON.stringify(state.items);
+
+            axios.post("/api/orders", args).then(() => {
+                console.log('submit성공');
+                alert('주문이 성공적으로 처리되었습니다.');
+                router.push({path:"/orders"})
+            })
+        }
+
         const computedPrice = computed(() => {
             let result = 0;
             for (let i of state.items) {
@@ -117,7 +131,7 @@ export default {
             return result;
         });
         load();
-        return { state, lib, computedPrice }
+        return { state, lib, computedPrice, submit }
     }
 }
 </script>

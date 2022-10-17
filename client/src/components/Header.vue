@@ -18,8 +18,11 @@
             <li class="nav-item">
               <router-link to="/admin" class="nav-link">Admin</router-link>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" v-if="$store.state.account.id">
               <router-link to="/chat" class="nav-link">Community</router-link>
+            </li>
+            <li class="nav-item" v-if="$store.state.account.id">
+              <router-link to="/orders" class="nav-link">주문내역</router-link>
             </li>
           </ul>
           <ul class="navbar-nav">
@@ -28,14 +31,12 @@
               <i class="fa fa-heart" aria-hidden="true"></i>
             </router-link>
 
-
             <router-link to="/cart" class="nav-link btn cart">
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-
             </router-link>
 
             <li class="nav-item">
-              <router-link to="/register" class="nav-link">Register</router-link>
+              <router-link to="/register" class="nav-link" v-if="!$store.state.account.id">Register</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/login" class="nav-link" v-if="!$store.state.account.id">Login</router-link>
@@ -69,6 +70,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+header ul li a {
+  cursor: pointer;
+}
 header .navbar .like {
   color: red;
 }

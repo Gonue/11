@@ -29,7 +29,7 @@
                                             </label>
                                         </td>
                                         <td class="border-bottom-0">
-                                            <img :src="i.img_Path"/>
+                                            <img :src="i.img_Path" />
                                         </td>
                                         <td class="border-bottom-0 ">
                                             <div class="email">
@@ -37,7 +37,7 @@
                                             </div>
                                         </td>
                                         <td class="border-bottom-0">{{i.write}}</td>
-                                        
+
                                         <td class="border-bottom-0">{{i.price}}</td>
                                         <td class="border-bottom-0">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -55,11 +55,11 @@
                 <div class="container py-3">
                     <router-link to="/order" class="col-12 btn btn-primary btn3">구입하기</router-link>
                 </div>
-                <p class="py-5"/>
+                <p class="py-5" />
             </div>
         </section>
     </body>
-    
+
 </template>
 
 
@@ -76,7 +76,7 @@ export default {
         const load = () => {
             axios.get("/api/cart/items").then(({ data }) => {
                 state.items_Cart = data;
-                console.log("cart"+data);
+                console.log("cart" + data);
             })
         };
         const remove = (itemId) => {
@@ -96,7 +96,9 @@ img {
     width: 100px;
     height: 100px;
 }
-.table tbody th, .table tbody td {
+
+.table tbody th,
+.table tbody td {
     border: none;
     padding: 30px;
     font-size: 12px;
@@ -111,11 +113,11 @@ img {
     font-size: 13px;
     font-weight: 500;
 }
-.btn3{
-    width :200px;
+
+.btn3 {
+    width: 200px;
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 30px 50px
 }
-
 </style>
