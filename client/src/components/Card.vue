@@ -17,7 +17,7 @@
           </button>
         </div>
         <small class="text-muted">
-          {{lib.getNumberFormatted( item.price)}}$$
+          $${{lib.getNumberFormatted( item.price)}}
         </small>
         <!-- <small class="discount text-denger text-muted">
           {{item.discount_Per}}%

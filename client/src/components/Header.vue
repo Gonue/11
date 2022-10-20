@@ -38,6 +38,7 @@
             <li class="nav-item">
               <router-link to="/register" class="nav-link" v-if="!$store.state.account.id">Register</router-link>
             </li>
+            
             <li class="nav-item">
               <router-link to="/login" class="nav-link" v-if="!$store.state.account.id">Login</router-link>
               <a to="/login" class="nav-link" @click="logout()" v-else>LogOut</a>

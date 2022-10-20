@@ -42,7 +42,7 @@
                                         <td class="border-bottom-0">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                 <span aria-hidden="true">
-                                                    <i class="fa fa-close" @click="remove(i.id)"></i>
+                                                    <i class="fa fa-close" @click="remove(i.id), submit()"></i>
                                                 </span>
                                             </button>
                                         </td>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="container py-3">
-                    <router-link to="/order" class="col-12 btn btn-primary btn3">구입하기</router-link>
+                    <router-link to="/order" class="col-12 btn btn-warning btn3">구입하기</router-link>
                 </div>
                 <p class="py-5" />
             </div>
@@ -66,6 +66,8 @@
 <script>
 import { reactive } from "vue";
 import axios from 'axios';
+import VueAlertify from 'vue-alertify';
+
 
 export default {
     setup() {
@@ -73,6 +75,13 @@ export default {
             items_Cart: []
 
         })
+
+
+
+        const submit = () => {
+                window.alert("삭제 ㅠ!");
+            }
+
         const load = () => {
             axios.get("/api/cart/items").then(({ data }) => {
                 state.items_Cart = data;
@@ -85,7 +94,9 @@ export default {
             })
         }
         load();
-        return { state, remove }
+
+        
+        return { state, remove, submit }
     }
 }
 </script>
@@ -118,6 +129,6 @@ img {
     width: 200px;
     display: block;
     margin: 0 auto;
-    padding: 30px 50px
+    padding: 10px 50px
 }
 </style>

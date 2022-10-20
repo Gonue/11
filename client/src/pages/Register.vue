@@ -14,11 +14,7 @@
                 v-model="state.form.name">
             <label for="floatingInput">Name</label>
         </div>
-        <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
-                v-model="state.form.id">
-            <label for="floatingInput">Id</label>
-        </div>
+       
         <div class="form-floating">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
                 v-model="state.form.password">
@@ -61,15 +57,12 @@ export default {
         })
 
         const submit = () => {
-            axios.post("/api/account/login", state.form).then((res) => {
-                store.commit('setAccount', res.data);
-                sessionStorage.setItem("id", res.data);
+            
                 router.push({ path: "/" });
-                window.alert("로그인하였습니다.");
-            }).catch(() => {
-                window.alert("로그인 정보가 존재하지 않습니다.");
-            });
-        }
+                window.alert("회원가입 성공.");
+            }
+            
+        
         return { state, submit }
     }
 }

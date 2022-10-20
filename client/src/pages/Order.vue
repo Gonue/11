@@ -7,19 +7,17 @@
             <div class="row g-5">
                 <div class="col-md-5 col-lg-4 order-md-last">
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-primary">장바구니</span>
-                        <span class="badge bg-primary rounded-pill">{{state.items.length}}</span>
+                        <span class="text">장바구니</span>
+                        <span class="badge bg-dark rounded-pill">{{state.items.length}}</span>
                     </h4>
                     <ul class="list-group mb-3">
-                        <li class="list-group-item d-flex justify-content-between lh-sm" v-for="(i,idx) in state.items"
-                            :key="idx">
+                        <li class="list-group-item d-flex justify-content-between lh-sm" v-for="(i,idx) in state.items" :key="idx">
                             <div>
                                 <h6 class="my-0">{{i.name}}</h6>
                                 <small class="text-muted">{{i.write}}</small>
                             </div>
                             <span class="text-muted">${{lib.getNumberFormatted(i.price)}}</span>
                         </li>
-
                         <li class="list-group-item d-flex justify-content-between">
                             <span>Total(USD)</span>
                             <strong>${{lib.getNumberFormatted(computedPrice)}}</strong>
@@ -36,11 +34,11 @@
                                     v-model="state.form.name">
                                 </div>
                             </div>
-                            <div class="col-12"><label for="address" class="form-label">주소</label>
+                            <div class="col-12"><label for="address" class="form-label">이메일</label>
                                 <input type="text"
                                     class="form-control" 
                                     id="address" 
-                                    placeholder="1234 Main St" 
+                                    placeholder="abcd@naver.com" 
                                     v-model="state.form.address">
                             </div>
                         </div>
@@ -50,10 +48,15 @@
                             <div class="form-check"><input id="card" name="paymentMethod" type="radio"
                                     class="form-check-input" value="card" v-model="state.form.payment"><label class="form-check-label"
                                     for="card">신용카드</label></div>
-                            <div class="form-check"><input id="bank" name="paymentMethod" type="radio" value="bank"
-                                    class="form-check-input" v-model="state.form.payment"><label class="form-check-label" for="bank">무통장
-                                    입금</label></div>
 
+                            <div class="form-check"><input id="Kakaopay" name="paymentMethod" type="radio" value="Kakaopay"
+                                    class="form-check-input" v-model="state.form.payment"><label class="form-check-label" for="Kakaopay">카카오페이
+                                    </label></div>
+                            
+                            <div class="form-check"><input id="Toss" name="paymentMethod" type="radio" value="Toss"
+                                    class="form-check-input" v-model="state.form.payment"><label class="form-check-label" for="Toss">토스
+                                    </label></div>
+                                        
                             <!-- <div class="form-check"><input id="paypal" name="paymentMethod" type="radio"
                                     class="form-check-input" required=""><label class="form-check-label"
                                     for="paypal">PayPal</label></div> -->
@@ -71,7 +74,7 @@
                             </div>
                         </div>
                         <hr class="my-4">
-                        <button class="w-100 btn btn-primary btn-lg" @click="submit()">결제하기</button>
+                        <button class="w-100 btn btn-dark btn-lg" @click="submit()">결제하기</button>
                         </div>
                 </div>
             </div>

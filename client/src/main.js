@@ -12,5 +12,12 @@ import '@cloudgeek/vue3-video-player/dist/vue3-video-player.css'
 
 import '@/assets/css/style.css';
 
-createApp(App).use(store).use(router).use(Carousel3d).use(Vue3VideoPlayer, {lang: 'en'})
-.use(VueAudio).mount("#app");
+import VueAlertify from 'vue-alertify';
+
+createApp(App)
+.use(store)
+.use(router)
+.use(Carousel3d)
+.use(Vue3VideoPlayer, {lang: 'en'})
+.use(VueAudio)
+.mount("#app");

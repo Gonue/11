@@ -10,14 +10,14 @@
         </li>
 
         <li>
-          <a @click="addToCart(item.id)">
+          <a @click="addToCart(item.id), submit1()">
             <i class="fa fa-heart">
             </i>
           </a>
         </li>
 
         <li>
-          <a @click="addToLike(item.id)">
+          <a @click="addToLike(item.id), submit()">
             <i class="fa fa-shopping-cart">
             </i>
           </a>
@@ -66,9 +66,15 @@ export default {
         console.log('like success')
       })
     };
+    const submit = () => {
+                window.alert(" 장바구니추가!");
+            }
+    const submit1 = () => {
+      window.alert("좋아용🤡");
+    }
     
 
-    return { lib, addToCart, addToLike}
+    return { lib, addToCart, addToLike, submit, submit1}
   }
   
 

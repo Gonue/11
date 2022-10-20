@@ -12,7 +12,6 @@
       <!-- <slide :index="i" :key="i" v-for="(slide, i) in state.slides"> -->
         <figure>
           <img :src="slide.src" />
-          
           <figcaption>
             <v-btn text color="white">{{slide.text}}</v-btn>
           </figcaption>
@@ -32,7 +31,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h2>Featured Product</h2>
+              <h2>Artist Album</h2>
             </div>
           </div>
         </div>
@@ -57,7 +56,7 @@
 import { Carousel3d, Slide } from 'vue3-carousel-3d';
 import axios from "axios";
 import { reactive } from "vue";
-import { ref} from "vue";
+import { ref } from "vue";
 import Card_test from "@/components/Card_test.vue";
 export default {
   data: () => ({
@@ -80,21 +79,17 @@ export default {
   setup() {
     const state = reactive({
       items: [],
-      slides: []
+      slide: []
     })
     
-    var slides = [];
 
     axios.get("/api/items").then(({ data }) => {
+      // state.items = data;
+      state.slide = data;
       state.items = data;
-      state.slides = data;
-      console.log("state"+ state.slides);
-
-      slides= data;
-      console.log("slides"+slides);
-
+      console.log("state.slide:"+state.slide)
+      console.log(data);
     })
-    console.log(state)
 
     return { state }
   }
